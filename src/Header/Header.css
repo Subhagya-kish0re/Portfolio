@@ -1,0 +1,45 @@
+.logo {
+  width: 2.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.greenText {
+  color: aquamarine;
+}
+.headerLinks {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.headerLinks:hover {
+  color: aquamarine;
+}
+.logoContainer {
+  display: flex;
+  width: fit-content;
+  text-align: center;
+  align-items: center;
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  user-select: none;
+}
+.linkContainer {
+  display: flex;
+  width: 36rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.resume {
+  background-color: transparent;
+  color: aquamarine;
+  border: 1px solid aquamarine;
+  padding: 0.5rem 1rem;
+}
+.resume:active {
+  background-color: aquamarine;
+  color: black;
+  transform: translateY(4px);
+}

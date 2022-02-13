@@ -1,0 +1,38 @@
+.leftCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 38vh;
+  width: 4rem;
+  position: fixed;
+  bottom: 0;
+}
+.iconsCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 25vh;
+  justify-content: space-around;
+}
+.icons {
+  filter: grayscale(100%);
+  color: #cadefc;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.icons:hover {
+  filter: grayscale(0%);
+  color: aquamarine;
+  transition-timing-function: ease;
+  transition: 0.2s;
+  transform: translateY(-0.1rem);
+}
+.icons:active {
+  color: #cca8e9;
+  filter: grayscale(0%);
+}
+.line {
+  background-color: #cadefc;
+  height: 8rem;
+  width: 2px;
+}
