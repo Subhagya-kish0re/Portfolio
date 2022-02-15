@@ -8,7 +8,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import CancelIcon from '@mui/icons-material/Cancel';
-import { AMAZON, GLAMGRAM } from "./projectImage";
+import { IMAGES } from "./projectImage";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -20,7 +20,7 @@ const useStyles = makeStyles(({
     },
     paper: {
         backgroundColor: "#0A192F !important",
-        borderRadius:"2rem !important",
+        borderRadius: "2rem !important",
         height: "80vh",
         minWidth: "80vw"
     },
@@ -63,6 +63,7 @@ const ImageContainer = (props) => {
 
 var ScreenshotDialog = (props) => {
     const [open, setOpen] = React.useState(props.state);
+    // const [imageType,setImageType] = React.useState()
     const classes = useStyles();
     return (
         <div className={classes.root}>
@@ -91,24 +92,12 @@ var ScreenshotDialog = (props) => {
                     </div>
                 </DialogTitle>
                 <DialogContent classes={{ root: classes.dialogroot }}>
-                    {props?.dialogProjectName == "AMAZON" ? <>
-                        {
-                            AMAZON.map((elem) => {
-                                return (
-                                    <ImageContainer imgSrc={elem.img} />
-                                )
-                            })
-                        }
-                    </> :
-                        <>
-                            {
-                                GLAMGRAM.map((elem) => {
-                                    return (
-                                        <ImageContainer imgSrc={elem.img} />
-                                    )
-                                })
-                            }
-                        </>
+                    {
+                        IMAGES[props?.dialogProjectName]?.map((elem) => {
+                            return (
+                                <ImageContainer imgSrc={elem.img} />
+                            )
+                        })
                     }
                 </DialogContent>
             </Dialog>

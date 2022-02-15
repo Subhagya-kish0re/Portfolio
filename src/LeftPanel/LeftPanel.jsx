@@ -26,7 +26,7 @@ var LeftPanel = () => {
         <a
           onFocus={iconClicked}
           className="icons"
-          href="https://www.hackerrank.com/ace_xhat"
+          href="https://www.hackerrank.com/subhagyakishor99"
           target="_blank"
         >
           <img
@@ -34,7 +34,7 @@ var LeftPanel = () => {
             src={process.env.PUBLIC_URL + "/HackerRank_logo.svg"}
           />
         </a>
-        <a
+        {/* <a
           onFocus={iconClicked}
           className="icons"
           href="https://leetcode.com/bhaskar20inn/"
@@ -47,7 +47,7 @@ var LeftPanel = () => {
           }}
             src={process.env.PUBLIC_URL + "/leetcode_logo.svg"}
           />
-        </a>
+        </a> */}
       </div>
       <div className="line"></div>
     </div>

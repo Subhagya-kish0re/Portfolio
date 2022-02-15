@@ -11,7 +11,7 @@ const useStyles = makeStyles({
   },
 });
 var Intro = () => {
-  let email = "bhaskar20inn@gmail.com";
+  let email = "subhagyakishor18@gmail.com";
   const classes = useStyles();
   return (
     <div className="IntroContainer">

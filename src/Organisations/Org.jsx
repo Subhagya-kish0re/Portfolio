@@ -116,12 +116,12 @@ export default function Org() {
               label="Mvaro"
               {...a11yProps(1)}
             />
-            <Tab
+            {/* <Tab
               disableRipple
               className={classes.Tab}
               label="The Grip Foundation"
               {...a11yProps(2)}
-            />
+            /> */}
           </Tabs>
           <TabPanel className={classes.panel} value={value} index={0}>
             <div>

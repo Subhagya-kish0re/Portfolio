@@ -56,10 +56,7 @@ let Projects = (props) => {
             </h2>
             <div className="ProjectDesc">
               <p className="descproject">
-                {/* This is a Full Stack Social media platform based upon
-                decentralised concept where user can buy/sell and showcase their
-                NFTs. Created the user Registration and Main Screens of the
-                product. */}
+                
                 We will develop a model using Support Vector Machine which 
                 should correctly classify the handwritten digits from 0-9 based 
                 on the pixel values given as features.
@@ -68,11 +65,15 @@ let Projects = (props) => {
             <p className="FrameWorks">
               Python DataScience ML-Model Jupyter-Notebook
             </p>
-            <a onClick={() => handleErrorDialog(true)} className="icons">
+            <a
+              href="https://github.com/Subhagya-kish0re/classify-the-handwritten-digits-from-0-9-based-on-the-pixel-values-p"
+              target="_blank"
+              className="icons"
+            >
               <GitHubIcon />
             </a>
             <div
-              onClick={() => handleDialogState(true, "GLAMGRAM")}
+              onClick={() => handleDialogState(true, "Number")}
               className="icons"
             >
               <ImageIcon />
@@ -104,22 +105,22 @@ let Projects = (props) => {
               </p>
             </div>
             <p className="FrameWorks">
-            Python DataScience ML-Model Jupyter-Notebook
+            Python Data cience ML-Model Jupyter-Notebook
             </p>
             <a
-              href="https://github.com/Acexhat/callwork_Dashboard"
+              href="https://github.com/Subhagya-kish0re/MLmodel-Diabetes-prediction_dataset"
               target="_blank"
               className="icons"
             >
               <GitHubIcon />
             </a>
-            <a
-              href="https://callboard.herokuapp.com/"
-              target="_blank"
+            
+            <div
+              onClick={() => handleDialogState(true, "Diabeties")}
               className="icons"
             >
-              <LanguageIcon />
-            </a>
+              <ImageIcon />
+            </div>
           </div>
           <div className="ProjectImageCover2" onMouseEnter={imageSlider}></div>
         </div>
@@ -143,9 +144,19 @@ let Projects = (props) => {
               </p>
             </div>
             <p className="FrameWorks">HTML CSS JavaScript</p>
-            <a onClick={() => handleErrorDialog(true)} className="icons">
+            <a
+              href="https://github.com/Subhagya-kish0re/food-delivery-site-"
+              target="_blank"
+              className="icons"
+            >
               <GitHubIcon />
             </a>
+            <div
+              onClick={() => handleDialogState(true, "Delivery")}
+              className="icons"
+            >
+              <ImageIcon />
+            </div>
           </div>
           <div className="ProjectImageCover1" onMouseEnter={imageSlider}></div>
         </div>
@@ -167,70 +178,32 @@ let Projects = (props) => {
             </h2>
             <div className="ProjectDesc">
               <p className="descproject">
-               
+               In this project I have detected the type of Iris Using Different features given in the dataset.
+               I have used the concepts of Data Analytics to get the preferred outcome.
               </p>
             </div>
             <p className="FrameWorks">
               Python DataScience Jupyter-Notebook
             </p>
             <a
-              href="https://github.com/Acexhat/ToDoApp"
+              href="https://github.com/Subhagya-kish0re/Iris-Detection"
               target="_blank"
               className="icons"
             >
               <GitHubIcon />
             </a>
-            <a
-              href="https://drive.google.com/file/d/19TqWv2NRNF_UX-MesrSchfGo34TCdt9j/view?usp=sharing"
-              target="_blank"
-              className="icons"
-            >
-              <PhoneAndroidIcon />
-            </a>
-          </div>
-          <div className="ProjectImageCover2" onMouseEnter={imageSlider}></div>
-        </div>
-      </div>
-      {/* <div data-aos="fade">
-        <div className="Projectcard1">
-          <img
-            style={{ height: "17rem" }}
-            onMouseEnter={imageSlider}
-            className="scraperImage"
-            src={process.env.PUBLIC_URL + "screenshots/ss1.png"}
-          />
-          <div className="ProjectDescBlock1">
-            <p className="greenText FeaturedProjects">Featured Project</p>
-            <h2 className="ProjectName">
-              <b>Amazon Clone Minor</b>
-            </h2>
-            <div className="ProjectDesc">
-              <p className="descproject">
-                This is a clone of Amazon created in a group as minor project. I
-                have handled the whole frontend Part.
-              </p>
-            </div>
-            <p className="FrameWorks">
-              ReactJs Javascript NodeJS/ExpressJS MYSQL
-            </p>
-            <a
-              href="https://github.com/Acexhat/minorProject"
-              target="_blank"
-              className="icons"
-              className="icons"
-            >
-              <GitHubIcon />
-            </a>
+            
             <div
-              onClick={() => handleDialogState(true, "AMAZON")}
+              onClick={() => handleDialogState(true, "IRIS")}
               className="icons"
             >
               <ImageIcon />
             </div>
           </div>
-          <div className="ProjectImageCover1" onMouseEnter={imageSlider}></div>
+          <div className="ProjectImageCover2" onMouseEnter={imageSlider}></div>
         </div>
-      </div> */}
+      </div>
+      
       {isScreenDialog ? (
         <ScreenshotDialog
           state={isScreenDialog}
