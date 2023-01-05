@@ -1,0 +1,57 @@
+<TabPanel className={classes.panel} value={value} index={2}>
+            <div>
+              <Typography variant="h5" color="initial">
+                Data Science & Business Analyst
+                <span className="greenText"> @TSF</span>
+              </Typography>
+              <Typography variant="body2" color="initial">
+                January - Febuary 2022
+              </Typography>
+              <ul className="skillUl">
+                <li>
+                  <Typography
+                    className={classes.desc}
+                    variant="caption"
+                    color="initial"
+                  >
+                    {/* An NFT based Social media platform along with marketplace to sell and buy NFTs over ERC720 */}
+                    I was in a role of Security Analyst for the terror attacks of a particular Area
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    className={classes.desc}
+                    variant="caption"
+                    color="initial"
+                  >
+                    Joined as the Founding Member of company and took the responsiblity of CTO
+                  </Typography>
+                </li>
+                {/* <li>
+                  <Typography
+                    className={classes.desc}
+                    variant="caption"
+                    color="initial"
+                  >
+                    Worked on full stack development where convert the idea into UI along with that created backend for user Registration
+                  </Typography>
+                </li> */}
+                <li>
+                  <Typography
+                    className={classes.desc}
+                    variant="caption"
+                    color="initial"
+                  >
+                    Guided two junior interns in ReactJS to make them grow and learn
+                  </Typography>
+                </li>
+              </ul>
+            </div>
+          </TabPanel>
+
+
+          <a
+              href="https://drive.google.com/file/d/19TqWv2NRNF_UX-MesrSchfGo34TCdt9j/view?usp=sharing"
+              target="_blank"
+              className="icons"
+            >
